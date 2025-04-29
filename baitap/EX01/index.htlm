@@ -7,7 +7,7 @@
 <body>
     <h1>longacma</h1>
     <ul>
-        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">index</a></li>
         <li><a href="#">Thông tin</a></li>
         <li><a href="#">Dịch vụ</a></li>
     </ul>
