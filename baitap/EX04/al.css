@@ -1,0 +1,27 @@
+/* Căn chỉnh tiêu đề chính */
+.main-title {
+  font-size: 2.5rem;
+  color: #FF6347;  /* Màu đỏ cam cho tiêu đề chính */
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Căn chỉnh các chủ đề */
+nav.topics {
+  display: flex;
+  justify-content: flex-start;  /* Các liên kết nằm sang trái */
+  gap: 20px;
+  position: absolute;
+  top: 10px;  /* Đưa chủ đề lên trên tiêu đề chính */
+  left: 20px;
+}
+
+nav.topics a {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+
+nav.topics a:hover {
+  color: #FF6347;  /* Thay đổi màu khi hover */
+}
