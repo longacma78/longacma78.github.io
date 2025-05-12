@@ -20,9 +20,6 @@
         <ul>
             <li><a href="trangchu.html">Trang chủ</a></li>
         <li><a href="thongtin.html">Thông tin</a></li>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#css">CSS</a></li>
-            <li><a href="#js">JavaScript</a></li>
             <li><a href="dichvu.html">Dịch vụ</a></li>
         </ul>
     </nav>
