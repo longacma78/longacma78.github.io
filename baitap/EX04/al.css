@@ -1,27 +1,79 @@
-/* Căn chỉnh tiêu đề chính */
-.main-title {
-  font-size: 2.5rem;
-  color: #FF6347;  /* Màu đỏ cam cho tiêu đề chính */
-  text-align: center;
-  margin-top: 50px;
+/* Cài đặt font chữ và các thuộc tính chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-/* Căn chỉnh các chủ đề */
+/* Căn chỉnh tiêu đề chính */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Để các phần tử con có thể sử dụng position absolute */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #FF6347;  /* Màu cho tiêu đề chính */
+}
+
+/* Cấu trúc menu điều hướng */
 nav.topics {
   display: flex;
   justify-content: flex-start;  /* Các liên kết nằm sang trái */
   gap: 20px;
   position: absolute;
-  top: 10px;  /* Đưa chủ đề lên trên tiêu đề chính */
-  left: 20px;
+  top: 10px;  /* Đưa menu lên trên cùng */
+  left: 20px; /* Đưa menu sát trái */
 }
 
 nav.topics a {
   font-size: 1.2rem;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
 nav.topics a:hover {
-  color: #FF6347;  /* Thay đổi màu khi hover */
+  color: #FF6347; /* Thay đổi màu khi hover */
+}
+
+/* Cấu trúc phần nội dung chính */
+main {
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.features ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.features li {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
