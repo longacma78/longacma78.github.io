@@ -1,79 +1,111 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body and general layout */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-/* Căn chỉnh tiêu đề chính */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: relative; /* Để các phần tử con có thể sử dụng position absolute */
+/* Header */
+h1 {
+    font-size: 36px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #FF6347;  /* Màu cho tiêu đề chính */
+/* Navigation menu */
+nav.menu {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-/* Cấu trúc menu điều hướng */
-nav.topics {
-  display: flex;
-  justify-content: flex-start;  /* Các liên kết nằm sang trái */
-  gap: 20px;
-  position: absolute;
-  top: 10px;  /* Đưa menu lên trên cùng */
-  left: 20px; /* Đưa menu sát trái */
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
 }
 
-nav.topics a {
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
+nav.menu ul li {
+    margin: 0 20px;
 }
 
-nav.topics a:hover {
-  color: #FF6347; /* Thay đổi màu khi hover */
+nav.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-/* Cấu trúc phần nội dung chính */
-main {
-  padding: 20px;
+nav.menu ul li a:hover {
+    color: #ff9900;
 }
 
-.intro h2 {
-  font-size: 2rem;
-  color: #333;
+/* Headings and content */
+h2, h3 {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
 }
 
-.intro p {
-  font-size: 1.2rem;
-  color: #555;
+/* Paragraph styling */
+p {
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.features ul {
-  list-style-type: square;
-  margin-left: 20px;
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-.features li {
-  font-size: 1.2rem;
-  color: #333;
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 16px;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Center the whole page content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
