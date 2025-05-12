@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>LongACMA - Thiết Kế Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS nội bộ -->
     <style>
         body {
@@ -15,42 +15,54 @@
             color: #333;
         }
 
+        /* MENU CĂN GIỮA */
         .menu {
-            background-color: #1a237e;
-            padding: 10px 0;
+            background-color: #0d47a1;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .menu ul {
+            display: flex;
+            gap: 30px;
             list-style: none;
             margin: 0;
             padding: 0;
-            text-align: center;
-        }
-
-        .menu ul li {
-            display: inline-block;
-            margin: 0 15px;
         }
 
         .menu ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
-            padding: 8px 12px;
-            transition: background 0.3s;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .menu ul li a:hover {
-            background-color: #3949ab;
-            border-radius: 4px;
+            background-color: #1976d2;
+            transform: scale(1.05);
         }
 
+        /* TIÊU ĐỀ */
         h1, h2 {
             color: #1a237e;
             padding-left: 20px;
             margin-top: 20px;
         }
 
+        /* ĐOẠN VĂN */
+        p {
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        /* FORM */
         form {
             margin: 20px 20px;
         }
@@ -76,6 +88,7 @@
             background-color: #3949ab;
         }
 
+        /* CÁC PHẦN NỘI DUNG NGANG */
         .section {
             display: flex;
             align-items: flex-start;
@@ -84,7 +97,7 @@
             background-color: #fff;
             margin: 10px 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .section .text {
@@ -96,32 +109,36 @@
             width: 150px;
             height: auto;
             border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
     </style>
 </head>
 <body>
 
+    <!-- MENU -->
     <nav class="menu">
         <ul>
-            <li><a href="trangchu.html">Trang chủ</a></li>
-            <li><a href="thongtin.html">Thông tin</a></li>
-            <li><a href="dichvu.html">Dịch vụ</a></li>
+            <li><a href="trangchu.html">🏠 Trang chủ</a></li>
+            <li><a href="thongtin.html">ℹ️ Thông tin</a></li>
+            <li><a href="dichvu.html">🛠️ Dịch vụ</a></li>
         </ul>
     </nav>
 
+    <!-- TIÊU ĐỀ -->
     <h1>Lập trình cơ bản</h1>
 
     <h2>Thiết kế website chuyên nghiệp</h2>
-    <p style="padding: 0 20px;">Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
+    <p>Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
 
+    <!-- FORM -->
     <h2>Đăng ký để nhận thông báo mới từ chúng tôi</h2>
     <form action="#">
         <input type="email" placeholder="Nhập Email..." required>
         <button type="submit">Đăng ký</button>
     </form>
 
-    <!-- Các phần hiển thị ngang -->
+    <!-- NỘI DUNG NGANG 1 -->
     <div class="section">
         <div class="text">
             <h3>Ngôn ngữ HTML5</h3>
@@ -130,6 +147,7 @@
         <img src="https://vtc.edu.vn/wp-content/uploads/2021/06/thiet-ke-do-hoa-co-ban-vtc-academy.jpg" alt="HTML5">
     </div>
 
+    <!-- NỘI DUNG NGANG 2 -->
     <div class="section">
         <div class="text">
             <h3>Ngôn ngữ CSS3</h3>
@@ -138,6 +156,7 @@
         <img src="https://nongdanit.info/wp-content/uploads/2016/10/javascript.jpg" alt="CSS3">
     </div>
 
+    <!-- NỘI DUNG NGANG 3 -->
     <div class="section">
         <div class="text">
             <h3>Thiết kế đồ họa</h3>
