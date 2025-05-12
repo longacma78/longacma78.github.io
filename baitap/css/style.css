@@ -1,60 +1,74 @@
- body {
-            font-family: Arial, sans-serif; /* Gắn phông chữ chính */
-            color: #333; /* Màu chữ chung */
-            background-color:#f2f8f5; /* Màu nền trang */
-        }
+ background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-        h1 {
-            color: white; /* Màu chữ tiêu đề chính */
-            background-color: #225033; /* Màu nền tiêu đề chính */
-            text-align: center;
-        }
+/* Căn giữa nội dung chính */
+body > * {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        h2, h3 {
-            color: #502c4b; /* Màu chữ tiêu đề phụ */
-            background-color: #ecf0f1; /* Màu nền tiêu đề phụ */
-            padding: 8px;
-        }
+/* Thanh menu */
+nav.menu {
+    background-color: #007acc;
+    padding: 15px;
+}
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
 
-        li {
-            display: inline;
-            margin-right: 15px;
-        }
+nav.menu li {
+    display: inline;
+}
 
-        a {
-            text-decoration: none;
-            color: #2980b9;
-        }
+nav.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+/* Tiêu đề căn trái */
+h1, h2, h3 {
+    text-align: left;
+    color: #005b99;
+}
 
-        form {
-            margin-top: 20px;
-        }
+/* Định dạng form đăng ký */
+form {
+    margin-top: 20px;
+}
 
-        input[type="email"] {
-            padding: 8px;
-            font-size: 14px;
-        }
+input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-        button {
-            padding: 8px 12px;
-            font-size: 14px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+button {
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-        button:hover {
-            background-color: #2980b9;
-        }
-    </style>
-</head>
+button:hover {
+    background-color: #005b99;
+}
+
+/* Hình ảnh căn giữa */
+img {
+    display: block;
+    margin: 10px auto;
+}
