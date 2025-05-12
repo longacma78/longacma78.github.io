@@ -1,30 +1,31 @@
-
-/* Đặt font chung và căn giữa toàn bộ nội dung */
+/* Đặt font chung và nền trắng */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: white; /* nền trắng */
 }
 
-/* Phần menu điều hướng */
+/* Phần menu điều hướng - thanh chủ đề */
 .menu {
-    background-color: #d0d7df; /* màu xanh
+    background-color: #007BFF; /* màu xanh */
     padding: 10px 0;
 }
 
+/* Danh sách liên kết trong menu */
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;              /* căn ngang */
-    justify-content: center;    /* căn giữa các mục */
-    gap: 20px;                  /* khoảng cách giữa các mục */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Liên kết trong menu - chữ màu đen */
 .menu li a {
-    color: white;
+    color: black; /* chữ màu đen */
     text-decoration: none;
     font-weight: bold;
     padding: 8px 16px;
@@ -33,14 +34,16 @@ body {
 .menu li a:hover {
     background-color: #0056b3;
     border-radius: 4px;
+    color: white;
 }
 
 /* Tiêu đề */
 h1, h2, h3 {
-    color: #d1d6db;
+    color: #007BFF;
+    text-align: center;
 }
 
-/* Phần biểu mẫu */
+/* Biểu mẫu */
 form input[type="email"] {
     padding: 8px;
     width: 250px;
@@ -49,7 +52,7 @@ form input[type="email"] {
 
 form button {
     padding: 8px 16px;
-    background-color: #e4e9ee;
+    background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
