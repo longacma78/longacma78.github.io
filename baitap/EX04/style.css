@@ -1,4 +1,4 @@
-
+/* Đặt font chung và căn giữa toàn bộ nội dung */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -36,7 +36,7 @@ body {
 
 /* Tiêu đề */
 h1, h2, h3 {
-    color: #007BFF;
+    color: #d1d6db;
 }
 
 /* Phần biểu mẫu */
