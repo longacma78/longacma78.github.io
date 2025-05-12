@@ -5,7 +5,6 @@
     <title>LongACMA - Thiết Kế Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS nội bộ -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,21 +14,24 @@
             color: #333;
         }
 
-        /* MENU CĂN GIỮA */
+        /* MENU */
         .menu {
             background-color: #0d47a1;
-            display: flex;
-            justify-content: center;
             padding: 15px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .menu ul {
             display: flex;
+            justify-content: center;
             gap: 30px;
             list-style: none;
             margin: 0;
             padding: 0;
+        }
+
+        .menu ul li {
+            margin: 0;
         }
 
         .menu ul li a {
@@ -48,10 +50,9 @@
         }
 
         /* TIÊU ĐỀ */
-        h1, h2 {
+        h1, h2, h3 {
             color: #1a237e;
-            padding-left: 20px;
-            margin-top: 20px;
+            margin: 20px;
         }
 
         /* ĐOẠN VĂN */
@@ -64,7 +65,7 @@
 
         /* FORM */
         form {
-            margin: 20px 20px;
+            margin: 20px;
         }
 
         input[type="email"] {
@@ -88,20 +89,21 @@
             background-color: #3949ab;
         }
 
-        /* CÁC PHẦN NỘI DUNG NGANG */
+        /* SECTION NỘI DUNG NGANG */
         .section {
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
-            justify-content: space-between;
-            padding: 20px;
             background-color: #fff;
-            margin: 10px 20px;
+            margin: 20px;
+            padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .section .text {
             flex: 1;
+            min-width: 200px;
             padding-right: 20px;
         }
 
@@ -109,9 +111,24 @@
             width: 150px;
             height: auto;
             border-radius: 6px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section .text {
+                padding-right: 0;
+            }
+
+            .section img {
+                margin-top: 15px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,51 +136,6 @@
     <!-- MENU -->
     <nav class="menu">
         <ul>
-            <li><a href="trangchu.html">🏠 Trang chủ</a></li>
-            <li><a href="thongtin.html">ℹ️ Thông tin</a></li>
-            <li><a href="dichvu.html">🛠️ Dịch vụ</a></li>
-        </ul>
-    </nav>
-
-    <!-- TIÊU ĐỀ -->
-    <h1>Lập trình cơ bản</h1>
-
-    <h2>Thiết kế website chuyên nghiệp</h2>
-    <p>Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
-
-    <!-- FORM -->
-    <h2>Đăng ký để nhận thông báo mới từ chúng tôi</h2>
-    <form action="#">
-        <input type="email" placeholder="Nhập Email..." required>
-        <button type="submit">Đăng ký</button>
-    </form>
-
-    <!-- NỘI DUNG NGANG 1 -->
-    <div class="section">
-        <div class="text">
-            <h3>Ngôn ngữ HTML5</h3>
-            <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và sẽ là công nghệ cốt lõi của Internet trong tương lai không xa, được đề xuất đầu tiên bởi Opera Software.</p>
-        </div>
-        <img src="https://vtc.edu.vn/wp-content/uploads/2021/06/thiet-ke-do-hoa-co-ban-vtc-academy.jpg" alt="HTML5">
-    </div>
-
-    <!-- NỘI DUNG NGANG 2 -->
-    <div class="section">
-        <div class="text">
-            <h3>Ngôn ngữ CSS3</h3>
-            <p>CSS3 là viết tắt của Cascading Style Sheet level 3, là phiên bản nâng cao của CSS. Được sử dụng để cấu trúc, tạo kiểu và định dạng các trang web.</p>
-        </div>
-        <img src="https://nongdanit.info/wp-content/uploads/2016/10/javascript.jpg" alt="CSS3">
-    </div>
-
-    <!-- NỘI DUNG NGANG 3 -->
-    <div class="section">
-        <div class="text">
-            <h3>Thiết kế đồ họa</h3>
-            <p>Thiết kế đồ họa là một chuyên ngành thuộc mỹ thuật. "Đồ họa" chỉ bản vẽ trên mặt phẳng, còn "thiết kế" là sự kiến thiết và sáng tạo.</p>
-        </div>
-        <img src="https://devmaster.edu.vn/uploads/images/2020/11/1411/image-zoom-css.PNG" alt="Thiết kế đồ họa">
-    </div>
-
-</body>
-</html>
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="thongtin.html">Thông tin</a></li>
+            <li
