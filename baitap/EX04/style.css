@@ -1,95 +1,42 @@
-/* Reset và cấu hình chung */
-body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-  color: #000000;
+
+/* Menu thanh ngang */
+.menu {
+    background-color: #004080;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Đảm bảo xuống dòng đẹp trên màn hình nhỏ */
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.menu .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
 }
 
-/* Header */
-header {
-  background: #cce5ff;
-  color: #000000;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #007acc 3px solid;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin: 0;
 }
 
-header a {
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px;
-}
-
-header #branding {
-  float: left;
-}
-
-header #branding h1 {
-  margin: 0;
-}
-
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-
-header .highlight,
-header .current a {
-  color: #007acc;
-  font-weight: bold;
-}
-
-header a:hover {
-  color: #666666;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  padding: 20px;
-  margin-top: 20px;
-  color: #ffffff;
-  background-color: #007acc;
-  text-align: center;
-}
-
-/* Phần nội dung chính */
-.main-content {
-  padding: 20px 0;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.section h2 {
-  color: #007acc;
-  border-bottom: 2px solid #007acc;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.section p {
-  line-height: 1.6;
+.nav-links li a:hover {
+    color: #ffcc00;
 }
