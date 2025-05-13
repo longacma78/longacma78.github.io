@@ -1,12 +1,12 @@
+/* Reset và cấu hình chung */
 body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #ffffff; /* Nền trắng */
-  color: #000000; /* Chữ màu đen */
+  background-color: #ffffff;
+  color: #000000;
 }
 
-/* Global */
 .container {
   width: 80%;
   margin: auto;
@@ -14,17 +14,18 @@ body {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 header {
-  background: #cce5ff; /* Màu xanh nhạt */
-  color: #000000; /* Chữ đen */
+  background: #cce5ff;
+  color: #000000;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #007acc 3px solid; /* Viền xanh đậm hơn */
+  border-bottom: #007acc 3px solid;
 }
 
 header a {
@@ -37,7 +38,7 @@ header a {
 header li {
   float: left;
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 header #branding {
@@ -55,7 +56,7 @@ header nav {
 
 header .highlight,
 header .current a {
-  color: #007acc; /* Điểm nhấn màu xanh */
+  color: #007acc;
   font-weight: bold;
 }
 
@@ -69,6 +70,26 @@ footer {
   padding: 20px;
   margin-top: 20px;
   color: #ffffff;
-  background-color: #007acc; /* Màu xanh footer */
+  background-color: #007acc;
   text-align: center;
+}
+
+/* Phần nội dung chính */
+.main-content {
+  padding: 20px 0;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  color: #007acc;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  line-height: 1.6;
 }
