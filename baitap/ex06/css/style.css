@@ -1,7 +1,7 @@
 /* Global */
 body {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 0;
   background-color: #f4f4f8;
   color: #2c3e50;
 }
@@ -22,52 +22,44 @@ ul {
 header {
   background: linear-gradient(to right, #007acc, #66b3ff);
   color: white;
-  padding: 40px 30px;
+  padding: 20px 0;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-header li {
-  display: inline-block;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-header #branding {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-header #branding h1 {
+header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
-header nav {
+nav ul {
   display: flex;
 }
 
-nav a.current,
-header .current {
-  color: #ffeb3b;
-  border: none;
-  background: none;
+nav ul li {
+  margin-left: 20px;
 }
 
-header a:hover {
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.current {
   color: #ffeb3b;
 }
 
 /* Showcase */
 #showcase {
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -75,7 +67,7 @@ header a:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-#showcase h1 {
+#showcase h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -88,15 +80,44 @@ header a:hover {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
+/* Form */
+form {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+img {
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
 /* Footer */
 footer {
   background: linear-gradient(to right, #007acc, #66b3ff);
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-/* Software list */
-ul.software-list li {
-  margin-top: 15px;
+  margin-top: 40px;
 }
