@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -27,5 +26,22 @@
     <p>Với đội ngũ lập trình viên giàu kinh nghiệm, chúng tôi cam kết mang lại giải pháp web tối ưu, chuyên nghiệp và phù hợp với nhu cầu từng khách hàng.</p>
 
     <img src="https://via.placeholder.com/200" alt="Dịch vụ lập trình" width="200">
+
+    <h2>Đăng ký sử dụng dịch vụ</h2>
+    <form action="#" method="post">
+        <label for="fullname">Họ và tên:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required><br><br>
+
+        <label for="phone">Số điện thoại:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại..." required pattern="[0-9]{10,12}"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Nhập email..." required><br><br>
+
+        <label for="message">Yêu cầu hoặc ghi chú:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Nhập yêu cầu..."></textarea><br><br>
+
+        <button type="submit">Gửi đăng ký</button>
+    </form>
 </body>
 </html>
