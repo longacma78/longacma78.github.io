@@ -8,8 +8,8 @@
 
 /* Tiêu đề chính với ảnh nền */
 header {
-  background: url('istockphoto-1224500457-612x612.jpg') no-repeat center center/cover;
-  color: rgb(12, 11, 11);
+  background: url('hinh-anh-cua-ban.jpg') no-repeat center center/cover;
+  color: rgb(17, 17, 17);
   text-align: center;
   padding: 100px 20px;
   position: relative;
@@ -27,7 +27,7 @@ header p {
 
 /* Phần giới thiệu */
 #about {
-  background-color: #f4f4f4;
+  background-color: #edecec;
   padding: 50px 20px;
   text-align: center;
 }
