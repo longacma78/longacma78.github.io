@@ -9,7 +9,7 @@
 /* Tiêu đề chính với ảnh nền */
 header {
   selector {
-  background-image: url('longacma78.github.io/canhan/ing/anh.jpg');
+  background-image: url('https://longacma78.github.io/canhan/ing/anh.jpg');
   background-size: cover; /* Đảm bảo ảnh phủ kín phần tử */
   background-position: center; /* Canh giữa ảnh */
   background-repeat: no-repeat; /* Ngừng lặp lại ảnh */
