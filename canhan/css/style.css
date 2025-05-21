@@ -1,4 +1,4 @@
-/* Reset cơ bản */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,31 +6,22 @@
 }
 
 body {
-  <body>
-  <div class="cv-container">
-    <div class="left">...</div>
-    <div class="right">...</div>
-  </div>
-</body>
-
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  flex-wrap: wrap;
-  min-height: 100vh;
 }
 
-/* Container gộp để đồng bộ chiều cao 2 bên */
+/* Container bọc 2 bên */
 .cv-container {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: stretch; /* giúp 2 bên bằng chiều cao */
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* LEFT + RIGHT chung */
@@ -39,16 +30,15 @@ body {
   background-color: white;
   padding: 25px 20px;
   border-radius: 8px;
-  width: 400px;
+  width: 48%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   text-align: center;
 }
 
-/* LEFT */
+/* LEFT cụ thể */
 .left {
   background-color: #3a8525;
   color: white;
@@ -57,7 +47,7 @@ body {
 .left img {
   width: 130px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .left h2 {
@@ -71,7 +61,6 @@ body {
   text-decoration: none;
 }
 
-/* Các phần trong .left có gạch chân */
 .profile-info,
 .contact-info,
 .skills {
@@ -81,20 +70,18 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Danh sách kỹ năng */
 .skills ul {
   list-style: disc;
   padding-left: 20px;
   text-align: left;
 }
 
-/* RIGHT */
+/* RIGHT cụ thể */
 .right {
-  background-color: #ffffff;
+  background-color: white;
   color: #333;
 }
 
-/* Các phần nội dung trong .right */
 .section {
   width: 100%;
   margin-bottom: 25px;
@@ -103,17 +90,15 @@ body {
   text-align: center;
 }
 
-/* Tiêu đề phần */
 .section h3 {
   color: #3a8525;
   font-size: 20px;
   margin-bottom: 10px;
+  border-bottom: 2px solid #3a8525;
   display: inline-block;
   padding-bottom: 5px;
-  border-bottom: 2px solid #3a8525;
 }
 
-/* Danh sách trong các phần */
 .section ul {
   padding-left: 20px;
   text-align: left;
