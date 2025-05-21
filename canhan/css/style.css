@@ -6,27 +6,49 @@
 }
 
 body {
+  <body>
+  <div class="cv-container">
+    <div class="left">...</div>
+    <div class="right">...</div>
+  </div>
+</body>
+
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
   padding: 40px 20px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 30px;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
-/* Phần chung giữa .left và .right */
+/* Container gộp để đồng bộ chiều cao 2 bên */
+.cv-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* LEFT + RIGHT chung */
 .left,
 .right {
-  width: 400px;
-  padding: 25px 20px;
   background-color: white;
+  padding: 25px 20px;
   border-radius: 8px;
+  width: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
 }
 
-/* LEFT (Thông tin cá nhân) */
+/* LEFT */
 .left {
   background-color: #3a8525;
   color: white;
@@ -53,6 +75,7 @@ body {
 .profile-info,
 .contact-info,
 .skills {
+  width: 100%;
   margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -65,7 +88,7 @@ body {
   text-align: left;
 }
 
-/* RIGHT (nội dung chính: giới thiệu, học vấn, kinh nghiệm...) */
+/* RIGHT */
 .right {
   background-color: #ffffff;
   color: #333;
@@ -73,6 +96,7 @@ body {
 
 /* Các phần nội dung trong .right */
 .section {
+  width: 100%;
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ccc;
