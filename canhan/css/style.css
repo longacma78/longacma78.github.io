@@ -11,22 +11,22 @@ body {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-/* LEFT + RIGHT chung */
+/* Phần chung giữa .left và .right */
 .left,
 .right {
-  background-color: white;
-  padding: 25px 20px;
-  border-radius: 8px;
   width: 400px;
+  padding: 25px 20px;
+  background-color: white;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center; /* canh giữa toàn bộ nội dung */
+  text-align: center;
 }
 
-/* LEFT */
+/* LEFT (Thông tin cá nhân) */
 .left {
   background-color: #3a8525;
   color: white;
@@ -38,19 +38,18 @@ body {
   margin-bottom: 20px;
 }
 
+.left h2 {
+  font-size: 24px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
 .left a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* Tiêu đề tên */
-.left h2 {
-  color: #ffcc00;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* Tất cả các phần trong left đều có gạch chân */
+/* Các phần trong .left có gạch chân */
 .profile-info,
 .contact-info,
 .skills {
@@ -59,43 +58,44 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Kỹ năng */
+/* Danh sách kỹ năng */
 .skills ul {
   list-style: disc;
   padding-left: 20px;
   text-align: left;
 }
 
-/* RIGHT */
+/* RIGHT (nội dung chính: giới thiệu, học vấn, kinh nghiệm...) */
 .right {
+  background-color: #ffffff;
   color: #333;
-  text-align: center;
 }
 
-/* Mỗi section trong phần phải đều có gạch chân */
+/* Các phần nội dung trong .right */
 .section {
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 
-/* Tiêu đề của mỗi section */
+/* Tiêu đề phần */
 .section h3 {
   color: #3a8525;
   font-size: 20px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #3a8525;
   display: inline-block;
   padding-bottom: 5px;
+  border-bottom: 2px solid #3a8525;
 }
 
-/* Danh sách trong section */
-ul {
+/* Danh sách trong các phần */
+.section ul {
   padding-left: 20px;
   text-align: left;
   margin-top: 8px;
 }
 
-ul li {
+.section ul li {
   margin-bottom: 6px;
 }
