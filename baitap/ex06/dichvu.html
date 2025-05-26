@@ -1,98 +1,54 @@
-/* Reset cơ bản */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-/* Thiết lập body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  padding: 20px;
-}
 
-/* Menu điều hướng */
-.menu ul {
-  list-style: none;
-  background-color: #2c3e50;
-  text-align: center;
-  padding: 10px 0;
-  margin-bottom: 30px;
-}
 
-.menu ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
 
-.menu ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+<!DOCTYPE html>
+<link rel="stylesheet" href="css.style.css">
+...
+<nav class="menu">
+    <div class="menu-container">
+        <h1 class="logo">Lập trình cơ bản</h1>
+        <ul class="nav-links">
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><a href="thongtin.html">Thông tin</a></li>
+            <li><a href="dichvu.html">Dịch vụ</a></li>
+        </ul>
+    </div>
+</nav>
 
-.menu ul li a:hover {
-  color: #f5c609;
-}
 
-/* Tiêu đề và nội dung */
-h1 {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
+    <section class="contact-form">
+        <h2>Đăng Ký Dịch Vụ</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Tên của bạn:</label>
+                <input type="text" id="name" name="name" required placeholder="Nhập tên của bạn">
+            </div>
 
-h2, h3 {
-  color: #34495e;
-  margin-top: 20px;
-}
+            <div class="form-group">
+                <label for="email">Gmail:</label>
+                <input type="email" id="email" name="email" required placeholder="Nhập địa chỉ email">
+            </div>
 
-p {
-  margin: 10px 0 20px;
-  line-height: 1.6;
-}
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+            </div>
 
-/* Form đăng ký */
-form {
-  margin: 20px 0;
-}
+            <div class="form-group">
+                <label for="message">Nội dung đăng ký:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Nhập nội dung đăng ký"></textarea>
+            </div>
 
-input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 10px;
-}
+            <div class="form-group">
+                <button type="submit">Gửi Đăng Ký</button>
+            </div>
+        </form>
+    </section>
 
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #27ae60;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    <footer>
+        <p>© 2025 Dịch Vụ Liên Hệ</p>
+    </footer>
 
-button:hover {
-  background-color: #219150;
-}
-
-/* Hình ảnh */
-img {
-  display: block;
-  margin: 10px 0 30px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #2c3e50;
-  color: white;
-  margin-top: 40px;
-}
+</body>
+</html>
