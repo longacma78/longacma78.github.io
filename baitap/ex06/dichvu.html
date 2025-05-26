@@ -1,52 +1,98 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>dich vu</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-    <title>Dịch Vụ - Lập Trình Web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Dịch Vụ Lập Trình Web</h1>
-    <ul>
-        <li><a href="trangchu.html">Trang chủ</a></li>
-        <li><a href="thongtin.html">Thông tin</a></li>
-        <li><a href="dichvu.html">Dịch vụ</a></li>
-    </ul>
+/* Thiết lập body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
 
-    <h2>Chúng tôi cung cấp:</h2>
-    <ul>
-        <li>Thiết kế giao diện website hiện đại, chuẩn responsive.</li>
-        <li>Lập trình web theo yêu cầu bằng HTML, CSS, JavaScript.</li>
-        <li>Xây dựng hệ thống quản trị nội dung (CMS) bằng PHP hoặc Node.js.</li>
-        <li>Tối ưu SEO, tốc độ tải trang và bảo mật website.</li>
-        <li>Hỗ trợ đăng ký tên miền và hosting.</li>
-    </ul>
+/* Menu điều hướng */
+.menu ul {
+  list-style: none;
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
 
-    <h2>Vì sao chọn chúng tôi?</h2>
-    <p>Với đội ngũ lập trình viên giàu kinh nghiệm, chúng tôi cam kết mang lại giải pháp web tối ưu, chuyên nghiệp và phù hợp với nhu cầu từng khách hàng.</p>
+.menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
 
-    <img src="https://via.placeholder.com/200" alt="Dịch vụ lập trình" width="200">
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    <h2>Đăng ký sử dụng dịch vụ</h2>
-    <form action="#" method="post">
-        <label for="fullname">Họ và tên:</label><br>
-        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required><br><br>
+.menu ul li a:hover {
+  color: #f5c609;
+}
 
-        <label for="phone">Số điện thoại:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại..." required pattern="[0-9]{10,12}"><br><br>
+/* Tiêu đề và nội dung */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Nhập email..." required><br><br>
+h2, h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
 
-        <label for="message">Yêu cầu hoặc ghi chú:</label><br>
-        <textarea id="message" name="message" rows="4" cols="40" placeholder="Nhập yêu cầu..."></textarea><br><br>
+p {
+  margin: 10px 0 20px;
+  line-height: 1.6;
+}
 
-        <button type="submit">Gửi đăng ký</button>
-    </form>
-</body>
-</html>
+/* Form đăng ký */
+form {
+  margin: 20px 0;
+}
 
+input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #27ae60;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+/* Hình ảnh */
+img {
+  display: block;
+  margin: 10px 0 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
