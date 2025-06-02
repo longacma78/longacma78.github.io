@@ -1,1 +1,189 @@
+/* ------------------ GLOBAL STYLE ------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button_1 {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button_1:hover {
+    background: #f0a500;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+header li {
+    display: inline;
+    padding: 0 10px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    background: #f0a500;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    background-color: #555;
+    transition: 0.3s;
+}
+
+/* ------------------ SHOWCASE ------------------ */
+#showcase {
+    background: #e2e2e2;
+    padding: 30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* ------------------ NEWSLETTER ------------------ */
+#newsletter {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter h1 {
+    margin-bottom: 10px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* ------------------ BOXES ------------------ */
+#boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+#boxes .box {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#boxes .box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* ------------------ SIDEBAR ------------------ */
+aside#sidebar {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ------------------ MAIN-COL ------------------ */
+article#main-col {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}
 
