@@ -1,1 +1,210 @@
-
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body chung */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container chung (nếu dùng) */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Ul chung */
+  ul {
+    list-style: none;
+  }
+  
+  /* Link nút (nếu có class button_1) */
+  .button_1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button_1:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Màu nền tối (dark mode) */
+  .dark {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  /* Header / nav menu */
+  .menu {
+    background-color: #1f2d3d;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .menu-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffc107; /* vàng */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  /* Tiêu đề h2 */
+  h2 {
+    color: #1f2d3d;
+    text-align: center;
+    margin: 30px 0 15px;
+  }
+  
+  /* Tiêu đề h3 */
+  h3 {
+    color: #444;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Đoạn văn */
+  p {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Form đăng ký */
+  form {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form input[type="email"],
+  form input[type="text"],
+  form input[type="tel"],
+  form textarea {
+    width: 300px;
+    max-width: 90%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  form button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Hình ảnh */
+  img {
+    display: block;
+    margin: 15px auto 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Section chung */
+  section {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #1f2d3d;
+  }
+  
+  section p {
+    text-align: left;
+  }
+  
+  /* Form đăng ký dịch vụ (cụ thể) */
+  .contact-form {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 50px auto 60px;
+    padding: 40px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1f2d3d;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1f2d3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 4px solid #ffc107;
+    margin-top: 40px;
+  }
+  
