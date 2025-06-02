@@ -1,115 +1,207 @@
-body{
-  
+/* ------------------ BODY ------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Global */
-.container{
-  
+/* ------------------ GLOBAL ------------------ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-ul{
-  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.button_1{
-  
+.button_1 {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.dark{
-  
+.button_1:hover {
+    background-color: #e0a800;
 }
 
-/* Header **/
-header{
-  
+.dark {
+    background-color: #1f2d3d;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-header a{
-  
+/* ------------------ HEADER ------------------ */
+header {
+    background-color: #1f2d3d;
+    color: #fff;
+    padding: 20px 0;
 }
 
-header li{
-  
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-header #branding{
-  
+header li {
+    display: inline-block;
+    margin: 0 5px;
 }
 
-header #branding h1{
-  
+header #branding {
+    float: left;
+    padding-left: 20px;
 }
 
-header nav{
-  
+header #branding h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-header .highlight, header .current a{
- 
+header nav {
+    float: right;
+    padding-right: 20px;
+    margin-top: 10px;
 }
 
-header a:hover{
-  
+header .highlight,
+header .current a {
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 4px;
 }
 
-/* Showcase */
-#showcase{
- 
+header a:hover {
+    background-color: #ffa000;
+    transition: 0.3s;
+    border-radius: 4px;
 }
 
-#showcase h1{
-  
+/* ------------------ SHOWCASE ------------------ */
+#showcase {
+    background: linear-gradient(to right, #003973, #e5e5be);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-#showcase p{
- 
+#showcase h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-/* Newsletter */
-#newsletter{
-  
+#showcase p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#newsletter h1{
-  
+/* ------------------ NEWSLETTER ------------------ */
+#newsletter {
+    background: #1f2d3d;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+#newsletter h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
 }
 
 #newsletter form {
-  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-#newsletter input[type="email"]{
-  
+#newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-/* Boxes */
-#boxes{
-  
+/* ------------------ BOXES ------------------ */
+#boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
 }
 
-#boxes .box{
-  
+#boxes .box {
+    background: #ffffff;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s;
 }
 
-#boxes .box img{
-  
+#boxes .box:hover {
+    transform: translateY(-5px);
 }
 
-/* Sidebar */
-aside#sidebar{
-  
+#boxes .box img {
+    width: 80px;
+    margin-bottom: 15px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  
+/* ------------------ SIDEBAR ------------------ */
+aside#sidebar {
+    background: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #ffc107;
+    border-radius: 6px;
+    margin-top: 20px;
 }
 
-/* Main-col */
-article#main-col{
-  
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-footer{
-  
+/* ------------------ MAIN COLUMN ------------------ */
+article#main-col {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+/* ------------------ FOOTER ------------------ */
+footer {
+    background: #1f2d3d;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 4px solid #ffc107;
+}
