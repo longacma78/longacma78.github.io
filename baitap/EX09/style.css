@@ -1,194 +1,115 @@
-/* ------------------ Body ------------------ */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+body{
+  
 }
 
-/* ------------------ Global ------------------ */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
+/* Global */
+.container{
+  
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+ul{
+  
 }
 
-.button_1 {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 4px;
+.button_1{
+  
 }
 
-.button_1:hover {
-    background: #f0a500;
-    transition: 0.3s;
+.dark{
+  
 }
 
-.dark {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+/* Header **/
+header{
+  
 }
 
-/* ------------------ Header ------------------ */
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+header a{
+  
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 8px 15px;
-    display: inline-block;
+header li{
+  
 }
 
-header li {
-    display: inline-block;
-    margin-left: 10px;
+header #branding{
+  
 }
 
-header #branding {
-    float: left;
-    padding-left: 15px;
+header #branding h1{
+  
 }
 
-header #branding h1 {
-    margin: 0;
-    font-size: 24px;
+header nav{
+  
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
-    padding-right: 15px;
+header .highlight, header .current a{
+ 
 }
 
-header .highlight,
-header .current a {
-    background: #f0a500;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
+header a:hover{
+  
 }
 
-header a:hover {
-    background-color: #555;
-    transition: 0.3s;
+/* Showcase */
+#showcase{
+ 
 }
 
-/* ------------------ Showcase ------------------ */
-#showcase {
-    background: #e2e2e2;
-    padding: 40px;
-    text-align: center;
+#showcase h1{
+  
 }
 
-#showcase h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+#showcase p{
+ 
 }
 
-#showcase p {
-    font-size: 18px;
+/* Newsletter */
+#newsletter{
+  
 }
 
-/* ------------------ Newsletter ------------------ */
-#newsletter {
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-#newsletter h1 {
-    margin: 0 0 10px;
+#newsletter h1{
+  
 }
 
 #newsletter form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  
 }
 
-#newsletter input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    border: none;
-    border-radius: 4px;
+#newsletter input[type="email"]{
+  
 }
 
-/* ------------------ Boxes ------------------ */
-#boxes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px 0;
+/* Boxes */
+#boxes{
+  
 }
 
-#boxes .box {
-    background: #fff;
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+#boxes .box{
+  
 }
 
-#boxes .box img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+#boxes .box img{
+  
 }
 
-/* ------------------ Sidebar ------------------ */
-aside#sidebar {
-    background: #f9f9f9;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
+/* Sidebar */
+aside#sidebar{
+  
 }
 
-aside#sidebar .quote input,
-aside#sidebar .quote textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  
 }
 
-/* ------------------ Main Column ------------------ */
-article#main-col {
-    background: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
+/* Main-col */
+article#main-col{
+  
 }
 
-/* ------------------ Footer ------------------ */
-footer {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
-    margin-top: 30px;
+footer{
+  
 }
+
