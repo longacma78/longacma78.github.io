@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Liên hệ - Du lịch Vịnh Hạ Long</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Liên hệ với chúng tôi</h1>
+</header>
+
+<nav>
+    <a href="trangchu.html">Trang chủ</a>
+    <a href="thongtincanhan.html">Thông tin cá nhân</a>
+    <a href="dichvu.html">Dịch vụ & Đăng ký</a>
+    <a href="lienhe.html" class="active">Liên hệ</a>
+</nav>
+
+<section>
+    <h2>Thông tin cá nhân liên hệ</h2>
+    <p><strong>Họ và tên:</strong> Nguyễn Thành Long</p>
+    <p><strong>Tuổi:</strong> 20</p>
+    <p><strong>Email:</strong> longthanh0106205@gmail.com</p>
+    <p><strong>Số điện thoại:</strong> 0362751302</p>
+
+    <h3>Gửi tin nhắn cho chúng tôi</h3>
+    <form id="contactForm" action="#" method="POST">
+        <label for="message">Nội dung:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung liên hệ" required></textarea>
+
+        <button type="submit">Gửi liên hệ</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Nam Du Lịch | Website cá nhân phục vụ bài tập HTML & CSS</p>
+</footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event){
+        event.preventDefault();
+        alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
 
